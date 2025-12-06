@@ -33,11 +33,12 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
   - **C**: 피할 수 없는 패턴 (unavoidable) / 좌우이동으로만 회피 가능
 
 - **상태(State) 예시**
-python
+```python
   [player_lane, speed, time_ratio,
    lane0_exists, lane0_dist, lane0_type,
    lane1_exists, lane1_dist, lane1_type,
    lane2_exists, lane2_dist, lane2_type, ...] 
+```
 
 - ** 보상(Reward)**
   - 기본 생존 보상 
