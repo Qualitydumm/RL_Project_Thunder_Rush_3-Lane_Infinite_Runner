@@ -40,7 +40,7 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
    lane2_exists, lane2_dist, lane2_type, ...] 
 ```
 
-- ** 보상(Reward)**
+- **보상(Reward)**
   - 기본 생존 보상 
     매 time step 마다 +0.1
   - 장애물 회피 보상
