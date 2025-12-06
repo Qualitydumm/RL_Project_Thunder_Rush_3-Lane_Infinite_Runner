@@ -1,1 +1,1 @@
-# Thunder-Rush-3---Lane-Infinite-Runner-
+# RL_Project_Thunder_Rush_3-Lane_Infinite_Runner
