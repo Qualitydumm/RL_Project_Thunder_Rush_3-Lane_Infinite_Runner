@@ -18,6 +18,45 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
     
 ---
 
+## 🎮 Environment Overview 
+
+- **행동(Action)** : discrete space(5)
+   - 0: 유지 (stay)
+   - 1: 왼쪽 이동 (left)
+   - 2: 오른쪽 이동 (right) 
+   - 3: 점프 (jump)
+   - 4: 슬라이드 (slide)
+    
+- **장애물 타입(Obstacles)** 
+  - **A**: 점프로만 회피 가능
+  - **B**: 슬라이드로만 회피 가능
+  - **C**: 피할 수 없는 패턴 (unavoidable) / 좌우이동으로만 회피 가능
+
+- **상태(State) 예시**
+python
+  [player_lane, speed, time_ratio,
+   lane0_exists, lane0_dist, lane0_type,
+   lane1_exists, lane1_dist, lane1_type,
+   lane2_exists, lane2_dist, lane2_type, ...] 
+
+- ** 보상(Reward)**
+  - 기본 생존 보상 
+    매 time step 마다 +0.1
+  - 장애물 회피 보상
+    장애물이 dist ≤ 0에 도달하면 지나간 것으로 간주하여 보상을 부여
+    - A/B 장애물
+      적절한 action: +2.0
+      다른 action으로 생존: +1.0
+    - C 장애물
+      적절한 action: +2.0
+      틀린 action: episode terminate
+  - Penalty
+    - 이동 penalty : 불필요한 lane 이동시, -0.01
+    - 충돌 penalty : 장애물 피하지 못할시 -10.0, episode terminate
+			(사망사유는 통계로 저장됨 :  (A_no_jump, B_no_slide, C_unavoidable))
+
+--- 
+
 ## 🧠 RL Algorithms
 
 이 프로젝트에서는 두 가지 강화학습 알고리즘을 비교/실험합니다.
@@ -59,21 +98,21 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
 ## 🛠 설치 방법 (Installation)
 
 ```bash
-git clone https://github.com/<your-id>/Cloud-Rush.git
-cd Cloud-Rush
+git clone https://github.com/Qualitydumm/RL_Project_Thunder_Rush_3-Lane_Infinite_Runner.git
+cd RL_Project_Thunder_Rush_3-Lane_Infinite_Runner
 
-# 가상 환경 권장
+# (선택) 가상환경 권장
 # python -m venv venv
-# source venv/bin/activate
+# source venv/bin/activate  # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🛠 사용법 (Usage)
 
 1) DQN 학습
-python python train_dqn_vector_seed_2.py
+python train_dqn_vector_seed_2.py
 
 2) PPO 학습
 python train_ppo_vector_seed_2.py
@@ -81,9 +120,11 @@ python train_ppo_vector_seed_2.py
 3) 게임 실행
 python subway_env_latency_test.py
 
-4)
+4) train 과정 통계 분석 및 csv 저장
 python stats_logger.py
 
+random number generator seed 변경을 통해 실험 및 신뢰구간을 작성하기 위해 seed_0, seed_1, seed_2 모두 업로드하였습니다.
+어떤 코드를 선택해도 진행에는 지장이 없습니다.
 
-
-
+## 📄 License
+This project is licensed under the MIT License.
