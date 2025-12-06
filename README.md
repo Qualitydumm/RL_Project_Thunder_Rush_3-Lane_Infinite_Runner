@@ -73,7 +73,17 @@ pip install -r requirements.txt
 ## 🛠 사용법 (Usage)
 
 1) DQN 학습
+python python train_dqn_vector_seed_2.py
 
 2) PPO 학습
+python train_ppo_vector_seed_2.py
 
 3) 게임 실행
+python subway_env_latency_test.py
+
+4)
+python stats_logger.py
+
+
+
+
