@@ -22,17 +22,18 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
 
 ```text
 RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
-├─ Codes-py/                  # 실험에 사용한 주요 Python 코드들
+├─ Codes/                  # 실험에 사용한 주요 Python 코드들
 │  ├─ train_dqn_vector_seed_0.py
 │  ├─ train_dqn_vector_seed_1.py
 │  ├─ train_dqn_vector_seed_2.py
 │  ├─ train_ppo_vector_seed_0.py
 │  ├─ train_ppo_vector_seed_1.py
 │  ├─ train_ppo_vector_seed_2.py
-│  ├─ subway_env_latency_test.py   # 환경 렌더링/latency 테스트용 (개발자용)
-│  └─ stats_logger.py              # 학습 로그 통계 분석 (개발자용)
-├─ models/                    # 학습된 DQN / PPO 모델 가중치
+│  ├─ subway_env_latency_test.py   # 환경 렌더링/latency 테스트용
+│  └─ stats_logger.py              # 학습 로그 통계 분석
+├─ Models/                    # 학습된 DQN / PPO 모델 가중치
 ├─ assets/                    # 게임 플레이 GIF, 학습 곡선 이미지 등
+├─ Stats/ 					  # 학습 로그 통계 csv 파일
 ├─ requirements.txt
 └─ README.md
 ```
