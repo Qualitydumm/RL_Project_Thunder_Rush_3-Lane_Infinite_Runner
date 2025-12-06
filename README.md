@@ -18,6 +18,27 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
     
 ---
 
+```markdown
+## 📁 프로젝트 구조 (Project Structure)
+
+```text
+RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
+├─ Codes-py/                  # 실험에 사용한 주요 Python 코드들
+│  ├─ train_dqn_vector_seed_0.py
+│  ├─ train_dqn_vector_seed_1.py
+│  ├─ train_dqn_vector_seed_2.py
+│  ├─ train_ppo_vector_seed_0.py
+│  ├─ train_ppo_vector_seed_1.py
+│  ├─ train_ppo_vector_seed_2.py
+│  ├─ subway_env_latency_test.py   # 환경 렌더링/latency 테스트용 (개발자용)
+│  └─ stats_logger.py              # 학습 로그 통계 분석 (개발자용)
+├─ models/                    # 학습된 DQN / PPO 모델 가중치
+├─ assets/                    # 게임 플레이 GIF, 학습 곡선 이미지 등
+├─ requirements.txt
+└─ README.md
+```
+
+---
 ## 🎮 Environment Overview 
 
 - **행동(Action)** : discrete space(5)
@@ -118,14 +139,21 @@ python train_dqn_vector_seed_2.py
 2) PPO 학습
 python train_ppo_vector_seed_2.py
 
-3) 게임 실행
+random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
+어떤 seed 버전을 실행해도 기본 동작은 동일합니다
+
+```markdown
+## 🔧 개발용 유틸리티 (Developer Utilities)
+
+프로젝트 개발 및 디버깅에 사용한 내부 스크립트입니다.
+
+```bash
+# 환경 렌더링 / latency 테스트용
 python subway_env_latency_test.py
 
-4) train 과정 통계 분석 및 csv 저장
+# 학습 로그 통계 분석 및 CSV 저장
 python stats_logger.py
-
-random number generator seed 변경을 통해 실험 및 신뢰구간을 작성하기 위해 seed_0, seed_1, seed_2 모두 업로드하였습니다.
-어떤 코드를 선택해도 진행에는 지장이 없습니다.
+```
 
 ## 📄 License
 This project is licensed under the MIT License.
