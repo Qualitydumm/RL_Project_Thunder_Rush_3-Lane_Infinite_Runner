@@ -18,7 +18,6 @@ Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 
     
 ---
 
-```markdown
 ## 📁 프로젝트 구조 (Project Structure)
 
 ```text
@@ -142,7 +141,6 @@ python train_ppo_vector_seed_2.py
 random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
 어떤 seed 버전을 실행해도 기본 동작은 동일합니다
 
-```markdown
 ## 🔧 개발용 유틸리티 (Developer Utilities)
 
 프로젝트 개발 및 디버깅에 사용한 내부 스크립트입니다.
