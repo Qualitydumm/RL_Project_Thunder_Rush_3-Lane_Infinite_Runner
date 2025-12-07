@@ -180,11 +180,11 @@ pip install -r requirements.txt
 
 1) DQN 학습
 ```
-python train_dqn_vector_seed_2.py
+python Codes\train_dqn_vector_seed_2.py
 ```
 2) PPO 학습
 ```
-python train_ppo_vector_seed_2.py
+python Codes\train_ppo_vector_seed_0.py
 ```
 
 random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
@@ -211,10 +211,10 @@ random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분
 
 ```bash
 # 환경 렌더링 / latency 테스트용
-python subway_env_latency_test.py
+python Codes\subway_env_latency_test.py
 
 # 학습 로그 통계 분석 및 CSV 저장
-python stats_logger.py
+python Codes\stats_logger.py
 ```
 
 ## 📄 License
