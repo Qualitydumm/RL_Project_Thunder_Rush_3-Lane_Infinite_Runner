@@ -190,6 +190,21 @@ python train_ppo_vector_seed_2.py
 random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
 어떤 seed 버전을 실행해도 기본 동작은 동일합니다
 
+---
+
+## 💾 학습된 모델 다운로드 (Trained Models Download)
+
+아래 링크를 통해 학습 완료된 모델 가중치를 바로 다운로드할 수 있습니다.
+
+- DQN best model (seed 0): [`dqn_vector_best_seed_0`](./Models/dqn_vector_best_seed_0.pth)
+- DQN best model (seed 1): [`dqn_vector_best_seed_1`](./Models/dqn_vector_best_seed_1.pth)
+- DQN best model (seed 2): [`dqn_vector_best_seed_2`](./Models/dqn_vector_best_seed_2.pth)
+- PPO best model (seed 0): [`ppo_vector_best_seed_0`](./Models/ppo_vector_best_seed_0.pth)
+- PPO best model (seed 1): [`ppo_vector_best_seed_1`](./Models/ppo_vector_best_seed_1.pth)
+- PPO best model (seed 2): [`ppo_vector_best_seed_2`](./Models/ppo_vector_best_seed_2.pth)
+
+---
+
 ## 🔧 개발용 유틸리티 (Developer Utilities)
 
 프로젝트 개발 및 디버깅에 사용한 내부 스크립트입니다.
