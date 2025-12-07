@@ -1,9 +1,5 @@
-# RL 학습 및 환경
 numpy
 torch
 gymnasium
 pygame
-
-# 학습 진행 표시 / 로깅
 tqdm
-wandb
