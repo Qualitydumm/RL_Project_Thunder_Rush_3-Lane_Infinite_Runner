@@ -184,10 +184,13 @@ pip install -r requirements.txt
 ## 🛠 사용법 (Usage)
 
 1) DQN 학습
+```
 python train_dqn_vector_seed_2.py
-
+```
 2) PPO 학습
-python train_ppo_vector_seed_2.py
+```python
+train_ppo_vector_seed_2.py
+```
 
 random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
 어떤 seed 버전을 실행해도 기본 동작은 동일합니다
