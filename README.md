@@ -162,8 +162,6 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 |----------|----------------|
 | ![game](assets/gameplay.gif) | ![reward](assets/total_reward_graph.png) |
 
-(파일 추가 후 경로 맞춰 넣으면 됨)
-
 ---
 
 ## 🛠 설치 방법 (Installation)
