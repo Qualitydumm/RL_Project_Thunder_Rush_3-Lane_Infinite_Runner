@@ -32,6 +32,8 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 │  ├─ subway_env_latency_test.py   # 환경 렌더링/latency 테스트용
 │  └─ stats_logger.py              # 학습 로그 통계 분석
 ├─ Models/                    # 학습된 DQN / PPO 모델 가중치
+│  ├─ dqn_vector_best_seed*.py # DQN 각 시드별 최고 모델
+│  └─ ppo_vector_best_seed*.py # PPO 각 시드별 최고 모델
 ├─ assets/                    # 게임 플레이 GIF, 학습 곡선 이미지 등
 ├─ Stats/ 					  # 학습 로그 통계 csv 파일
 ├─ requirements.txt
@@ -104,6 +106,54 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 - 64개 환경을 병렬로 실행하여 rollout 기반 학습
 
 ---
+## ⚙️ 최종 실험 설정 (Final Config)
+
+아래 설정은 보고서/슬라이드에 제시된 최종 결과(DQN_new vs PPO, seed 0·1·2 평균 및 분산)를 얻을 때 사용한 구성입니다.  
+
+### 공통 설정
+
+- 환경: `SubwayEnv` (`subway_env_latency_test.py`)
+- 관측 차원: 33
+- 행동 공간: 5 (`stay`, `left`, `right`, `jump`, `slide`)
+- 사용 seed: `{0, 1, 2}`  (DQN, PPO 모두 동일한 seed 집합 사용)
+
+### DQN_new (Dueling Double DQN)
+
+| 항목                  | 값            |
+| --------------------- | ------------- |
+| num_episodes          | 7,000         |
+| num_envs              | 256           |
+| buffer_capacity       | 2,000,000     |
+| batch_size            | 8,192         |
+| gamma                 | 0.985         |
+| lr                    | 1e-4          |
+| start_learning        | 50,000 steps  |
+| learn_every           | 2 steps       |
+| target_update_interval| 5,000 steps   |
+| epsilon_start         | 1.0           |
+| epsilon_end           | 0.01          |
+| epsilon_decay_steps   | 500,000 steps |
+
+### PPO (PPO + GAE, 최종 버전)
+
+| 항목            | 값           |
+| --------------- | ------------ |
+| num_episodes    | 7,000        |
+| num_envs        | 64           |
+| rollout_steps   | 256          |
+| update_epochs   | 6            |
+| mini_batch_size | 1,024        |
+| gamma           | 0.99         |
+| lam (GAE λ)     | 0.95         |
+| clip_coef       | 0.2          |
+| target_kl       | 0.02         |
+| lr              | 2.5e-4       |
+| entropy_coef    | 0.01         |
+| value_coef      | 0.5          |
+| max_grad_norm   | 0.5          |
+
+> 위 표의 설정은 `train_dqn_vector_seed_*.py`, `train_ppo_vector_seed_*.py`에 정의된 최종 `config/base_config`와 일치합니다.
+
 
 ## 🎥 시각 자료 
 
