@@ -117,7 +117,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 - 행동 공간: 5 (`stay`, `left`, `right`, `jump`, `slide`)
 - 사용 seed: `{0, 1, 2}`  (DQN, PPO 모두 동일한 seed 집합 사용)
 
-### DQN_new (Dueling Double DQN)
+### DQN (Dueling Double DQN)
 
 | 항목                  | 값            |
 | --------------------- | ------------- |
@@ -134,7 +134,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 | epsilon_end           | 0.01          |
 | epsilon_decay_steps   | 500,000 steps |
 
-### PPO (PPO + GAE, 최종 버전)
+### PPO (PPO + GAE)
 
 | 항목            | 값           |
 | --------------- | ------------ |
