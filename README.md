@@ -121,19 +121,19 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 
 | 항목                  | 값            |
 | --------------------- | ------------- |
-| num_episodes          | 7,000         |
+| num_episodes          | 4,000         |
 | num_envs              | 256           |
 | buffer_capacity       | 2,000,000     |
-| batch_size            | 8,192         |
-| gamma                 | 0.985         |
+| batch_size            | 4,096         |
+| gamma                 | 0.99          |
 | lr                    | 1e-4          |
-| start_learning        | 50,000 steps  |
+| start_learning        | 20,000 steps  |
 | learn_every           | 2 steps       |
 | target_update_interval| 5,000 steps   |
 | epsilon_start         | 1.0           |
 | epsilon_end           | 0.01          |
 | epsilon_decay_steps   | 500,000 steps |
-
+ 
 ### PPO (PPO + GAE)
 
 | 항목            | 값           |
