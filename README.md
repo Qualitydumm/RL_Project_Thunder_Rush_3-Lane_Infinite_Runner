@@ -158,7 +158,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 
 | 게임 화면 | 학습 total reward 곡선 |
 |----------|----------------|
-| ![game](assets/gameplay.gif) | ![reward](assets/total_reward_graph.png) |
+| ![game](assets/game.jpg) | ![reward](assets/total_reward_graph.png) |
 
 ---
 
