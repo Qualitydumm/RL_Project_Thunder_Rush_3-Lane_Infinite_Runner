@@ -158,7 +158,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 
 > 게임 플레이 이미지, 학습 곡선, 사망 분포 등 넣을 예정
 
-| 게임 화면 | 학습 보상 곡선 |
+| 게임 화면 | 학습 total reward 곡선 |
 |----------|----------------|
 | ![game](assets/gameplay.gif) | ![reward](assets/total_reward_graph.png) |
 
