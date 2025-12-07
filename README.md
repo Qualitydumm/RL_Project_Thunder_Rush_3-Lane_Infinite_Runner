@@ -1,6 +1,6 @@
 # ⚡Thunder Rush: 3-Lane Infinite Runner RL Agent⚡
 
-Cloud Rush는 **3-lane 무한 달리기 게임 환경**에서  
+Thunder Rush는 **3-lane 무한 달리기 게임 환경**에서  
 Agent가 **두 개의 강화학습(DQN, PPO) 알고리즘** 으로 장애물을 회피하며 최대한 오래 생존하도록 학습하는 프로젝트입니다.
 
 환경 설계부터 RL 알고리즘(DQN, PPO) 비교·개선까지 직접 수행했습니다.
