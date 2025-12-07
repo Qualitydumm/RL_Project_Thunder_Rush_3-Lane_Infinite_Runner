@@ -36,6 +36,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 │  └─ ppo_vector_best_seed*.pth    # PPO 각 시드별 최고 모델
 ├─ assets/                    # 게임 플레이 GIF, 학습 곡선 이미지 등
 ├─ Stats/ 					  # 학습 로그 통계 csv 파일
+├─ 벼락을느껴_RL_Project보고서.pptx	# 프로젝트 보고서서
 ├─ requirements.txt
 └─ README.md
 ```
