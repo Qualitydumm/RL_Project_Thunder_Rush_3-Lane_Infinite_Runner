@@ -160,7 +160,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 
 | 게임 화면 | 학습 보상 곡선 |
 |----------|----------------|
-| ![game](assets/gameplay.gif) | ![reward](assets/reward_curve.png) |
+| ![game](assets/gameplay.gif) | ![reward](assets/total_reward_graph.png) |
 
 (파일 추가 후 경로 맞춰 넣으면 됨)
 
