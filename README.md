@@ -196,12 +196,12 @@ random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분
 
 아래 링크를 통해 학습 완료된 모델 가중치를 바로 다운로드할 수 있습니다.
 
-- DQN best model (seed 0): [`dqn_vector_best_seed_0`](./Models/dqn_vector_best_seed_0.pth)
-- DQN best model (seed 1): [`dqn_vector_best_seed_1`](./Models/dqn_vector_best_seed_1.pth)
-- DQN best model (seed 2): [`dqn_vector_best_seed_2`](./Models/dqn_vector_best_seed_2.pth)
-- PPO best model (seed 0): [`ppo_vector_best_seed_0`](./Models/ppo_vector_best_seed_0.pth)
-- PPO best model (seed 1): [`ppo_vector_best_seed_1`](./Models/ppo_vector_best_seed_1.pth)
-- PPO best model (seed 2): [`ppo_vector_best_seed_2`](./Models/ppo_vector_best_seed_2.pth)
+- DQN best model (seed 0): [`dqn_vector_best_seed_0`](./Models/dqn_vector_best_seed0.pth)
+- DQN best model (seed 1): [`dqn_vector_best_seed_1`](./Models/dqn_vector_best_seed1.pth)
+- DQN best model (seed 2): [`dqn_vector_best_seed_2`](./Models/dqn_vector_best_seed2.pth)
+- PPO best model (seed 0): [`ppo_vector_best_seed_0`](./Models/ppo_vector_best_seed0.pth)
+- PPO best model (seed 1): [`ppo_vector_best_seed_1`](./Models/ppo_vector_best_seed1.pth)
+- PPO best model (seed 2): [`ppo_vector_best_seed_2`](./Models/ppo_vector_best_seed2.pth)
 
 ---
 
