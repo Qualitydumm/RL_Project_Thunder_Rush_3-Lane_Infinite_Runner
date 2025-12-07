@@ -188,8 +188,8 @@ pip install -r requirements.txt
 python train_dqn_vector_seed_2.py
 ```
 2) PPO 학습
-```python
-train_ppo_vector_seed_2.py
+```
+python train_ppo_vector_seed_2.py
 ```
 
 random seed만 다른 동일 실험 코드이며, 재현성 및 신뢰구간 분석을 위해 여러 버전을 제공했습니다.
