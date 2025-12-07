@@ -32,8 +32,8 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 │  ├─ subway_env_latency_test.py   # 환경 렌더링/latency 테스트용
 │  └─ stats_logger.py              # 학습 로그 통계 분석
 ├─ Models/                    # 학습된 DQN / PPO 모델 가중치
-│  ├─ dqn_vector_best_seed*.py # DQN 각 시드별 최고 모델
-│  └─ ppo_vector_best_seed*.py # PPO 각 시드별 최고 모델
+│  ├─ dqn_vector_best_seed*.pth	   # DQN 각 시드별 최고 모델
+│  └─ ppo_vector_best_seed*.pth    # PPO 각 시드별 최고 모델
 ├─ assets/                    # 게임 플레이 GIF, 학습 곡선 이미지 등
 ├─ Stats/ 					  # 학습 로그 통계 csv 파일
 ├─ requirements.txt
