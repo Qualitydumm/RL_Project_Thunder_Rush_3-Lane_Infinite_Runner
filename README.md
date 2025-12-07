@@ -138,7 +138,7 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 
 | 항목            | 값           |
 | --------------- | ------------ |
-| num_episodes    | 7,000        |
+| num_episodes    | 100,000      |
 | num_envs        | 64           |
 | rollout_steps   | 256          |
 | update_epochs   | 6            |
@@ -153,7 +153,6 @@ RL_Project_Thunder_Rush_3-Lane_Infinite_Runner/
 | max_grad_norm   | 0.5          |
 
 > 위 표의 설정은 `train_dqn_vector_seed_*.py`, `train_ppo_vector_seed_*.py`에 정의된 최종 `config/base_config`와 일치합니다.
-
 
 ## 🎥 시각 자료 
 
