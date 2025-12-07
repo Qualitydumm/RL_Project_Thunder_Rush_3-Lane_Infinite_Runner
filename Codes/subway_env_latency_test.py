@@ -413,7 +413,7 @@ class SubwayEnv(gym.Env):
             elif obs["type"] == "B":
                 reward += 2.0 if action == 4 else 1.0
             elif obs["type"] == "C":
-                reward += 1.0
+                reward += 2.0
 
         # 불필요한 lane 변경 페널티
         if action in [1, 2]:
@@ -529,3 +529,4 @@ class SubwayEnv(gym.Env):
         self.screen.blit(action_surface, (10, 550))
 
         pygame.display.flip()
+
